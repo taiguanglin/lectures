@@ -322,7 +322,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="二禪天" id="LuLrfq275eqFpUyGWk8G">
-    <mxGraphModel dx="5056" dy="5259" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4655" dy="5259" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="6qdJdfb9R5_5rkRj082d-0" />
         <mxCell id="6qdJdfb9R5_5rkRj082d-1" parent="6qdJdfb9R5_5rkRj082d-0" />
@@ -503,11 +503,11 @@
         <mxCell id="UjOfUGZj7IXm-fF6H_4I-3" parent="6qdJdfb9R5_5rkRj082d-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;三禅一天 (少净天)&lt;/span&gt;" vertex="1">
           <mxGeometry height="31.49" width="186.32" x="817" y="453.11" as="geometry" />
         </mxCell>
-        <mxCell id="wnrc6lko3w_Fjh9ICGWP-1" parent="6qdJdfb9R5_5rkRj082d-1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.64;dx=105.99;direction=south;notch=0;rotation=15;fillColor=#FF0000;" value="" vertex="1">
+        <mxCell id="wnrc6lko3w_Fjh9ICGWP-1" parent="6qdJdfb9R5_5rkRj082d-1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.64;dx=105.99;direction=south;notch=0;rotation=15;fillColor=none;strokeColor=#FF0000;" value="" vertex="1">
           <mxGeometry height="464.44" width="174.56" x="1267" y="330.03" as="geometry" />
         </mxCell>
-        <mxCell id="wnrc6lko3w_Fjh9ICGWP-2" parent="6qdJdfb9R5_5rkRj082d-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=15;fontStyle=1" value="&lt;span style=&quot;color: rgb(255, 0, 0); font-size: 36px; text-wrap-mode: nowrap;&quot;&gt;宇宙中心方向&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="82" x="1238" y="812" as="geometry" />
+        <mxCell id="wnrc6lko3w_Fjh9ICGWP-2" parent="6qdJdfb9R5_5rkRj082d-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=-75;fontStyle=1" value="&lt;span style=&quot;color: rgb(255, 0, 0); font-size: 36px; text-wrap-mode: nowrap;&quot;&gt;宇宙中心方向&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="82" x="1317" y="532" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
