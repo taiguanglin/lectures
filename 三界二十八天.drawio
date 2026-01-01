@@ -1,14 +1,47 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
   <diagram name="Page-1" id="gkW8YR64p2mC3A6dX1Fi">
-    <mxGraphModel dx="938" dy="763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1378" dy="1529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="" vertex="1">
-          <mxGeometry height="520" width="576.21" x="220" y="80" as="geometry" />
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;" value="" vertex="1">
+          <mxGeometry height="1137.19" width="1249.89" x="-160" y="-188.5" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;四禪九天&lt;/font&gt;" vertex="1">
-          <mxGeometry height="30" width="90" x="170" y="70" as="geometry" />
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;四禅四天 (无热天)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="391.14" y="-183" as="geometry" />
+        </mxCell>
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;" value="" vertex="1">
+          <mxGeometry height="1049" width="1152.96" x="-109" y="-149" as="geometry" />
+        </mxCell>
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;四禅五天 (无烦天)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="390.62" y="-143.5" as="geometry" />
+        </mxCell>
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;" value="" vertex="1">
+          <mxGeometry height="960" width="1045.21" x="-52.61" y="-110.5" as="geometry" />
+        </mxCell>
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;四禅四天 (无想天)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="391.48" y="-104.5" as="geometry" />
+        </mxCell>
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;" value="" vertex="1">
+          <mxGeometry height="862.5" width="939.05" x="-1" y="-69.5" as="geometry" />
+        </mxCell>
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;strokeColor=#808080;" value="" vertex="1">
+          <mxGeometry height="760" width="839.4" x="50" y="-30" as="geometry" />
+        </mxCell>
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;" value="" vertex="1">
+          <mxGeometry height="670" width="740" x="100" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;四禅一天 (福生天)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="390" y="19" as="geometry" />
+        </mxCell>
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="580" width="600.72" x="169.64" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;四禅二天 (福爱天)&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="390" y="-21" as="geometry" />
+        </mxCell>
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;四禅三天 (广果天)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="390" y="-64" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
