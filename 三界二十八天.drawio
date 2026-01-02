@@ -1,89 +1,89 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9" pages="5">
   <diagram name="洋蔥" id="gkW8YR64p2mC3A6dX1Fi">
-    <mxGraphModel dx="1965" dy="1121" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1910" dy="1087" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-48" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-48" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="1729.57" width="1878.59" x="-690" y="-390" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-47" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-47" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="1638.81" width="1780" x="-639.73" y="-350.24" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-46" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-46" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="1551.08" width="1689.18" x="-590.73" y="-316.04" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-45" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-45" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="1470.31" width="1601.22" x="-543.72" y="-281.74" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;非想非非想处天&lt;/span&gt;" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-36" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;非想非非想处天&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="185" x="200.98999999999978" y="-380.24" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;无所有处天&lt;/span&gt;" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-38" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;无所有处天&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="185" x="200.98999999999978" y="-345.04" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;识无边处天&lt;/span&gt;" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;识无边处天&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="185" x="200.98999999999978" y="-310.84000000000003" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;空无边处天&lt;/span&gt;" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-42" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;空无边处天&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="185" x="201.40999999999985" y="-275.74" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="1385" width="1516.18" x="-499.73" y="-246.43" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;四禅一天 (色究竟天)&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="185" x="200.98999999999978" y="-238.93" as="geometry" />
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-31" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;色究竟天 (&lt;/span&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;四禅第九天&lt;/span&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="251.99999999999977" y="-240.23000000000002" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-28" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-28" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="1304.47" width="1428.02" x="-449.73" y="-210.23000000000002" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;四禅二天 (善现天)&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="185" x="200.98999999999978" y="-203.73000000000002" as="geometry" />
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-29" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;善现天&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="194.98999999999978" y="-203.73000000000002" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-26" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-26" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="1223.6" width="1339.49" x="-399.73" y="-175.03" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;四禅三天 (善见天)&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="185" x="200.9899999999999" y="-169.53" as="geometry" />
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;善见天&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="195.9899999999999" y="-169.53" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="1137.19" width="1249.89" x="-349.73" y="-139.93" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;四禅四天 (无热天)&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="185" x="201.40999999999997" y="-134.43" as="geometry" />
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;无热天&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="196.40999999999997" y="-134.43" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="1049" width="1152.96" x="-298.73" y="-100.43" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;四禅五天 (无烦天)&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="185" x="200.89" y="-94.93" as="geometry" />
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;无烦天&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="195.89" y="-94.93" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="960" width="1045.21" x="-242.34000000000003" y="-61.93000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;四禅四天 (无想天)&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="185" x="201.75" y="-55.93000000000001" as="geometry" />
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;无想天&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="195.75" y="-55.93000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;shadow=1;strokeColor=#B3B3B3;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="862.5" width="939.05" x="-190.73000000000002" y="-20.930000000000007" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;strokeColor=#808080;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;strokeColor=#808080;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="760" width="839.4" x="-139.73000000000002" y="18.569999999999993" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="670" width="740" x="-89.73000000000002" y="58.56999999999999" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;四禅一天 (福生天)&lt;/font&gt;" vertex="1">
-          <mxGeometry height="30" width="185" x="200.26999999999998" y="67.57" as="geometry" />
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;福生天 (&lt;/font&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;四禅第一天)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="251.05999999999997" y="66" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=12;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="580" width="600.72" x="-20.090000000000032" y="103.57" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;四禅二天 (福爱天)&lt;/font&gt;" vertex="1">
-          <mxGeometry height="30" width="185" x="200.26999999999998" y="27.569999999999993" as="geometry" />
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;福爱天&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="196.26999999999998" y="27.569999999999993" as="geometry" />
         </mxCell>
-        <mxCell id="2UXk6q9uiCl76oE_1I8O-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;四禅三天 (广果天)&lt;/span&gt;" vertex="1">
-          <mxGeometry height="30" width="185" x="200.26999999999998" y="-15.430000000000007" as="geometry" />
+        <mxCell id="2UXk6q9uiCl76oE_1I8O-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;广果天&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="185" x="197.26999999999998" y="-15.430000000000007" as="geometry" />
         </mxCell>
         <mxCell id="hTFSNT6fidBYy9aXU6UO-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#5DF4FF;align=left;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;shadow=0;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&amp;nbsp; 三禅天&lt;/font&gt;" vertex="1">
           <mxGeometry height="31.75" width="71.65" x="331.35" y="127.48" as="geometry" />
@@ -103,29 +103,32 @@
         <mxCell id="wdvj0I0ifxLgsoCaQGcp-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#CC6600;align=left;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;shadow=0;" value="&lt;font style=&quot;font-size: 18px; color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp; 初禅天&lt;/font&gt;" vertex="1">
           <mxGeometry height="31.75" width="71.65" x="331" y="277.37" as="geometry" />
         </mxCell>
-        <mxCell id="wdvj0I0ifxLgsoCaQGcp-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CC6600;" value="" vertex="1">
+        <mxCell id="wdvj0I0ifxLgsoCaQGcp-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#CC6600;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
           <mxGeometry height="61" width="61" x="251.06" y="326.07" as="geometry" />
         </mxCell>
-        <mxCell id="wdvj0I0ifxLgsoCaQGcp-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#CC6600;align=left;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;shadow=0;" value="&lt;font style=&quot;font-size: 18px; color: rgb(255, 255, 255);&quot;&gt;六欲天，人间，地狱&lt;/font&gt;" vertex="1">
-          <mxGeometry height="31.75" width="177.65" x="331.35" y="340.7" as="geometry" />
+        <mxCell id="wdvj0I0ifxLgsoCaQGcp-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#CC6600;align=left;verticalAlign=middle;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;shadow=0;" value="&lt;font style=&quot;font-size: 18px; color: rgb(255, 255, 255);&quot;&gt;&amp;nbsp; 六欲天，人间，地狱&lt;/font&gt;" vertex="1">
+          <mxGeometry height="31.75" width="184.65" x="331.35" y="340.7" as="geometry" />
         </mxCell>
-        <mxCell id="wdvj0I0ifxLgsoCaQGcp-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 72px;&quot;&gt;{&lt;/font&gt;" vertex="1">
+        <mxCell id="wdvj0I0ifxLgsoCaQGcp-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;font style=&quot;font-size: 72px; color: rgb(255, 204, 230);&quot;&gt;{&lt;/font&gt;" vertex="1">
           <mxGeometry height="57" width="108" x="172" y="184.26" as="geometry" />
         </mxCell>
-        <mxCell id="wdvj0I0ifxLgsoCaQGcp-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 72px;&quot;&gt;{&lt;/font&gt;" vertex="1">
+        <mxCell id="wdvj0I0ifxLgsoCaQGcp-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;font style=&quot;font-size: 72px; color: rgb(93, 244, 255);&quot;&gt;{&lt;/font&gt;" vertex="1">
           <mxGeometry height="57" width="108" x="170" y="107" as="geometry" />
         </mxCell>
-        <mxCell id="wdvj0I0ifxLgsoCaQGcp-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 124px;&quot;&gt;{&lt;/font&gt;" vertex="1">
+        <mxCell id="wdvj0I0ifxLgsoCaQGcp-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;font style=&quot;font-size: 124px; color: rgb(204, 102, 0);&quot;&gt;{&lt;/font&gt;" vertex="1">
           <mxGeometry height="172" width="108" x="165" y="224" as="geometry" />
         </mxCell>
-        <mxCell id="wdvj0I0ifxLgsoCaQGcp-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#5DF4FF;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 96px;&quot;&gt;1000&lt;/font&gt;" vertex="1">
-          <mxGeometry height="86" width="267" x="-78" y="97.57" as="geometry" />
+        <mxCell id="wdvj0I0ifxLgsoCaQGcp-17" connectable="0" parent="1" style="group;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="" vertex="1">
+          <mxGeometry height="265.8" width="292" x="-103" y="97.57" as="geometry" />
         </mxCell>
-        <mxCell id="wdvj0I0ifxLgsoCaQGcp-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#FFCCE6;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 96px;&quot;&gt;1000&lt;/font&gt;" vertex="1">
-          <mxGeometry height="86" width="267" x="-77.99999999999999" y="184.26" as="geometry" />
+        <mxCell id="wdvj0I0ifxLgsoCaQGcp-14" parent="wdvj0I0ifxLgsoCaQGcp-17" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#5DF4FF;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;font style=&quot;font-size: 96px;&quot;&gt;X1000&lt;/font&gt;" vertex="1">
+          <mxGeometry height="86" width="292" as="geometry" />
         </mxCell>
-        <mxCell id="wdvj0I0ifxLgsoCaQGcp-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#CC6600;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 96px; color: rgb(255, 255, 255);&quot;&gt;1000&lt;/font&gt;" vertex="1">
-          <mxGeometry height="86" width="267" x="-78" y="277.37" as="geometry" />
+        <mxCell id="wdvj0I0ifxLgsoCaQGcp-15" parent="wdvj0I0ifxLgsoCaQGcp-17" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#FFCCE6;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;font style=&quot;font-size: 96px;&quot;&gt;X1000&lt;/font&gt;" vertex="1">
+          <mxGeometry height="86" width="292" x="1.554145908928459e-14" y="86.69" as="geometry" />
+        </mxCell>
+        <mxCell id="wdvj0I0ifxLgsoCaQGcp-16" parent="wdvj0I0ifxLgsoCaQGcp-17" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=#CC6600;align=center;verticalAlign=middle;rounded=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;font style=&quot;font-size: 96px; color: rgb(255, 255, 255);&quot;&gt;X1000&lt;/font&gt;" vertex="1">
+          <mxGeometry height="86" width="292" y="179.8" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
