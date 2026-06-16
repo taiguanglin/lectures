@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tai 師父答疑音檔串流</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --panel: #161a21;
+    --panel-2: #1c2230;
+    --border: #262d3a;
+    --text: #e8ecf3;
+    --muted: #9aa3b2;
+    --accent: #6aa6ff;
+    --accent-2: #8ed1ff;
+    --chip: #232a38;
+    --chip-active: #2f4673;
+    --danger: #ff6b6b;
+    --ok: #5ad19a;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f6f7fb;
+      --panel: #ffffff;
+      --panel-2: #f0f2f7;
+      --border: #e3e6ee;
+      --text: #1a1f2b;
+      --muted: #5b6577;
+      --accent: #2a6df4;
+      --accent-2: #1f4fbf;
+      --chip: #eef1f7;
+      --chip-active: #d6e3ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang TC",
+                 "Microsoft JhengHei", "Noto Sans TC", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    position: sticky; top: 0; z-index: 10;
+    background: color-mix(in oklab, var(--bg) 88%, transparent);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .container { max-width: 980px; margin: 0 auto; padding: 16px 20px; }
+  h1 {
+    margin: 0 0 6px;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+  }
+  .sub { color: var(--muted); font-size: 13px; }
+  .toolbar {
+    display: flex; flex-wrap: wrap; gap: 10px;
+    margin-top: 12px; align-items: center;
+  }
+  .search {
+    flex: 1 1 220px;
+    display: flex; align-items: center;
+    background: var(--panel-2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 8px 12px;
+  }
+  .search input {
+    flex: 1; background: transparent; border: 0; outline: 0;
+    color: var(--text); font-size: 14px;
+  }
+  .chip {
+    background: var(--chip);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .chip.active { background: var(--chip-active); border-color: var(--accent); }
+  .chip:hover { filter: brightness(1.08); }
+  .stats { color: var(--muted); font-size: 13px; margin-left: auto; }
+
+  main { padding: 16px 0 140px; }
+  .group {
+    margin: 18px 20px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .group-header {
+    padding: 12px 16px;
+    background: var(--panel-2);
+    border-bottom: 1px solid var(--border);
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 600; font-size: 14px;
+  }
+  .group-count {
+    margin-left: auto;
+    color: var(--muted); font-weight: 400; font-size: 12px;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 12px 16px;
+    border-top: 1px solid var(--border);
+  }
+  .item:first-child { border-top: 0; }
+  .item-title {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 14px;
+  }
+  .item-title .date {
+    color: var(--muted); font-variant-numeric: tabular-nums;
+    min-width: 76px;
+  }
+  .item-title .name { flex: 1; word-break: break-all; }
+  .badge {
+    font-size: 11px; padding: 2px 8px; border-radius: 999px;
+    background: var(--chip); color: var(--muted); border: 1px solid var(--border);
+  }
+  .badge.gz { background: rgba(106,166,255,0.12); color: var(--accent); border-color: rgba(106,166,255,0.35); }
+  .badge.tb { background: rgba(90,209,154,0.12); color: var(--ok); border-color: rgba(90,209,154,0.35); }
+  .badge.wx { background: rgba(255,191,90,0.12); color: #ffbf5a; border-color: rgba(255,191,90,0.35); }
+  .badge.web { background: rgba(180,140,255,0.12); color: #b48cff; border-color: rgba(180,140,255,0.35); }
+
+  audio {
+    width: 100%;
+    height: 36px;
+    accent-color: var(--accent);
+  }
+
+  .now-playing {
+    position: fixed; left: 0; right: 0; bottom: 0;
+    background: color-mix(in oklab, var(--panel) 92%, transparent);
+    backdrop-filter: saturate(180%) blur(12px);
+    border-top: 1px solid var(--border);
+    padding: 10px 16px;
+    display: none;
+    z-index: 20;
+  }
+  .now-playing.show { display: block; }
+  .np-row { max-width: 980px; margin: 0 auto; display: flex; align-items: center; gap: 12px; }
+  .np-label { color: var(--muted); font-size: 12px; }
+  .np-title { font-size: 13px; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .empty {
+    margin: 60px 20px; text-align: center; color: var(--muted);
+  }
+  .footer-note {
+    margin: 24px 20px 0; color: var(--muted); font-size: 12px; line-height: 1.6;
+  }
+  a { color: var(--accent); }
+
+  @media (min-width: 720px) {
+    .item { grid-template-columns: minmax(0, 1fr) minmax(280px, 460px); align-items: center; gap: 16px; }
+    audio { height: 32px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>Tai 師父答疑音檔串流</h1>
+    <div class="sub">共 <span id="totalCount">0</span> 個音檔 · 點擊播放即時串流（無需下載）</div>
+    <div class="toolbar">
+      <div class="search">
+        <input id="search" type="search" placeholder="搜尋日期或關鍵字，例如：2025年3月、貼吧、公眾號" autocomplete="off" />
+      </div>
+      <button class="chip active" id="sortNewest">最新優先</button>
+      <button class="chip" id="sortOldest">最舊優先</button>
+      <div class="stats" id="stats"></div>
+    </div>
+  </div>
+</header>
+
+<main id="list"></main>
+
+<div class="now-playing" id="np">
+  <div class="np-row">
+    <span class="np-label">正在播放</span>
+    <span class="np-title" id="npTitle">—</span>
+    <button class="chip" id="npStop">停止</button>
+  </div>
+</div>
+
+<div class="footer-note container">
+  提示：本頁為靜態網頁，音檔以 HTML5 原生播放器串流播放 <code>QnA/*.opus</code>。
+  若使用 Safari 無法播放 <code>.opus</code>，請改用 Chrome、Edge 或 Firefox。
+</div>
+
+<script>
+// === 檔案清單（與 QnA/ 內容對應）===
+const FILES = [
+  "2024年11月11日Tai師父答疑.opus",
+  "2024年11月12日Tai師父答疑.opus",
+  "2024年11月13日Tai師父答疑.opus",
+  "2024年11月14日Tai師父答疑.opus",
+  "2024年11月15日Tai師父答疑.opus",
+  "2024年11月16日Tai師父答疑.opus",
+  "2024年12月10日Tai師父公眾號答疑.opus",
+  "2024年12月10日Tai師父貼吧答疑.opus",
+  "2024年12月11日Tai師父公眾號答疑.opus",
+  "2024年12月11日Tai師父貼吧答疑.opus",
+  "2024年12月12日Tai師父公眾號答疑.opus",
+  "2024年12月12日Tai師父貼吧答疑.opus",
+  "2024年12月13日Tai師父公眾號答疑.opus",
+  "2024年12月13日Tai師父貼吧答疑.opus",
+  "2024年12月14日Tai師父公眾號答疑.opus",
+  "2024年12月14日Tai師父貼吧答疑.opus",
+  "2024年12月9日Tai師父公眾號答疑（上）.opus",
+  "2024年12月9日Tai師父公眾號答疑（下）.opus",
+  "2024年12月9日Tai師父貼吧答疑.opus",
+  "2024年2月11日Tai師父答疑.opus",
+  "2024年2月12日Tai師父答疑.opus",
+  "2024年2月13日Tai師父答疑.opus",
+  "2024年2月14日Tai師父答疑.opus",
+  "2024年2月15日Tai師父答疑.opus",
+  "2024年2月17日Tai師父答疑.opus",
+  "2024年2月18日Tai師父答疑.opus",
+  "2024年2月19日Tai師父答疑.opus",
+  "2024年2月20日Tai師父答疑.opus",
+  "2024年2月21日Tai師父答疑.opus",
+  "2024年2月22日Tai師父答疑.opus",
+  "2024年2月23日Tai師父答疑.opus",
+  "2024年2月25日Tai師父答疑.opus",
+  "2024年2月26日Tai師父答疑.opus",
+  "2024年2月27日Tai師父答疑.opus",
+  "2024年2月28日Tai師父答疑.opus",
+  "2024年2月29日Tai師父答疑.opus",
+  "2024年3月01日Tai師父答疑.opus",
+  "2024年3月02日Tai師父答疑.opus",
+  "2024年3月03日Tai師父答疑.opus",
+  "2024年3月05日Tai師父答疑.opus",
+  "2024年3月06日Tai師父答疑.opus",
+  "2024年3月07日Tai師父答疑.opus",
+  "2024年3月08日Tai師父答疑.opus",
+  "2024年3月09日Tai師父答疑.opus",
+  "2024年3月11日Tai師父答疑.opus",
+  "2024年3月12日Tai師父答疑.opus",
+  "2024年3月13日Tai師父答疑.opus",
+  "2024年3月14日Tai師父答疑.opus",
+  "2024年3月15日Tai師父答疑.opus",
+  "2024年3月16日Tai師父答疑.opus",
+  "2024年3月18日Tai師父答疑.opus",
+  "2024年3月19日Tai師父答疑.opus",
+  "2024年3月20日Tai師父答疑.opus",
+  "2024年3月21日Tai師父答疑.opus",
+  "2024年3月22日Tai師父答疑.opus",
+  "2024年3月23日Tai師父答疑.opus",
+  "2024年3月26日Tai師父答疑.opus",
+  "2024年3月27日Tai師父答疑.opus",
+  "2024年3月28日Tai師父答疑.opus",
+  "2024年3月29日Tai師父答疑.opus",
+  "2024年3月30日Tai師父答疑.opus",
+  "2024年4月08日Tai師父答疑.opus",
+  "2024年4月22日Tai師父答疑.opus",
+  "2024年4月23日Tai師父答疑.opus",
+  "2024年4月24日Tai師父答疑.opus",
+  "2024年4月25日Tai師父答疑.opus",
+  "2024年4月26日Tai師父答疑.opus",
+  "2024年4月27日Tai師父答疑.opus",
+  "2024年5月20日Tai師父答疑.opus",
+  "2024年5月21日Tai師父答疑.opus",
+  "2024年5月22日Tai師父答疑.opus",
+  "2024年5月23日Tai師父答疑.opus",
+  "2024年5月24日Tai師父答疑.opus",
+  "2024年5月25日Tai師父答疑.opus",
+  "2024年6月17日Tai師父答疑.opus",
+  "2024年6月18日Tai師父答疑.opus",
+  "2024年6月19日Tai師父答疑.opus",
+  "2024年6月20日Tai師父答疑.opus",
+  "2024年6月21日Tai師父答疑.opus",
+  "2024年6月22日Tai師父答疑.opus",
+  "2024年7月15日Tai師父答疑.opus",
+  "2024年7月16日Tai師父答疑.opus",
+  "2024年7月17日Tai師父答疑.opus",
+  "2024年7月18日Tai師父答疑.opus",
+  "2024年7月19日Tai師父答疑.opus",
+  "2024年7月20日Tai師父答疑.opus",
+  "2024年8月12日Tai師父答疑.opus",
+  "2024年8月13日Tai師父答疑.opus",
+  "2024年8月14日Tai師父答疑.opus",
+  "2024年8月15日Tai師父答疑.opus",
+  "2024年8月16日Tai師父答疑.opus",
+  "2024年8月17日Tai師父答疑.opus",
+  "2024年9月10日Tai師父答疑.opus",
+  "2024年9月11日Tai師父答疑.opus",
+  "2024年9月12日Tai師父答疑.opus",
+  "2024年9月13日Tai師父答疑.opus",
+  "2024年9月14日Tai師父答疑.opus",
+  "2024年9月9日Tai師父答疑.opus",
+  "2025年11月10日Tai師父官網答疑.opus",
+  "2025年11月10日Tai師父微信公眾號答疑.opus",
+  "2025年11月11日Tai師父官網答疑.opus",
+  "2025年11月11日Tai師父微信公眾號答疑.opus",
+  "2025年11月12日Tai師父官網答疑.opus",
+  "2025年11月12日Tai師父微信公眾號答疑.opus",
+  "2025年11月13日Tai師父官網答疑.opus",
+  "2025年11月13日Tai師父微信公眾號答疑.opus",
+  "2025年11月14日Tai師父官網答疑.opus",
+  "2025年11月14日Tai師父微信公眾號答疑.opus",
+  "2025年11月15日Tai師父官網答疑.opus",
+  "2025年11月15日Tai師父微信公眾號答疑.opus",
+  "2025年12月10日Tai師父官網答疑.opus",
+  "2025年12月10日Tai師父微信公眾號答疑.opus",
+  "2025年12月11日Tai師父官網答疑.opus",
+  "2025年12月11日Tai師父微信公眾號答疑.opus",
+  "2025年12月12日Tai師父官網答疑.opus",
+  "2025年12月12日Tai師父微信公眾號答疑.opus",
+  "2025年12月13日Tai師父官網答疑.opus",
+  "2025年12月13日Tai師父微信公眾號答疑.opus",
+  "2025年12月8日Tai師父官網答疑.opus",
+  "2025年12月8日Tai師父微信公眾號答疑.opus",
+  "2025年12月9日Tai師父官網答疑.opus",
+  "2025年12月9日Tai師父微信公眾號答疑.opus",
+  "2025年1月13日Tai師父微信公眾號答疑.opus",
+  "2025年1月13日Tai師父貼吧答疑.opus",
+  "2025年1月14日Tai師父微信公眾號答疑.opus",
+  "2025年1月14日Tai師父貼吧答疑.opus",
+  "2025年1月15日Tai師父微信公眾號答疑.opus",
+  "2025年1月15日Tai師父貼吧答疑.opus",
+  "2025年1月16日Tai師父微信公眾號答疑.opus",
+  "2025年1月16日Tai師父貼吧答疑.opus",
+  "2025年1月17日Tai師父微信公眾號答疑 .opus",
+  "2025年1月17日Tai師父貼吧答疑 .opus",
+  "2025年1月18日Tai師父微信公眾號答疑.opus",
+  "2025年1月18日Tai師父貼吧答疑.opus",
+  "2025年2月10日Tai師父微信公眾號答疑.opus",
+  "2025年2月10日Tai師父貼吧答疑.opus",
+  "2025年2月11日Tai師父微信公眾號答疑.opus",
+  "2025年2月11日Tai師父貼吧答疑.opus",
+  "2025年2月12日Tai師父微信公眾號答疑.opus",
+  "2025年2月12日Tai師父貼吧答疑.opus",
+  "2025年2月13日Tai師父微信公眾號答疑.opus",
+  "2025年2月13日Tai師父貼吧答疑.opus",
+  "2025年2月14日Tai師父微信公眾號答疑.opus",
+  "2025年2月14日Tai師父貼吧答疑.opus",
+  "2025年2月15日Tai師父微信公眾號答疑.opus",
+  "2025年2月15日Tai師父貼吧答疑.opus",
+  "2025年3月10日Tai師父微信公眾號答疑.opus",
+  "2025年3月10日Tai師父貼吧答疑.opus",
+  "2025年3月11日Tai師父微信公眾號答疑.opus",
+  "2025年3月11日Tai師父貼吧答疑.opus",
+  "2025年3月12日Tai師父微信公眾號答疑.opus",
+  "2025年3月12日Tai師父貼吧答疑.opus",
+  "2025年3月13日Tai師父微信公眾號答疑.opus",
+  "2025年3月13日Tai師父貼吧答疑.opus",
+  "2025年3月14日Tai師父微信公眾號答疑.opus",
+  "2025年3月14日Tai師父貼吧答疑.opus",
+  "2025年3月15日Tai師父微信公眾號答疑.opus",
+  "2025年3月15日Tai師父貼吧答疑.opus",
+  "2025年5月12日Tai師父微信公眾號答疑.opus",
+  "2025年5月12日Tai師父貼吧答疑.opus",
+  "2025年5月13日Tai師父微信公眾號答疑.opus",
+  "2025年5月13日Tai師父貼吧答疑.opus",
+  "2025年5月14日Tai師父微信公眾號答疑.opus",
+  "2025年5月14日Tai師父貼吧答疑.opus",
+  "2025年5月15日Tai師父微信公眾號答疑.opus",
+  "2025年5月15日Tai師父貼吧答疑.opus",
+  "2025年5月16日Tai師父微信公眾號答疑.opus",
+  "2025年5月16日Tai師父貼吧答疑.opus",
+  "2025年5月17日Tai師父微信公眾號答疑.opus",
+  "2025年5月17日Tai師父貼吧答疑.opus",
+  "2025年6月10日Tai師父微信公眾號答疑.opus",
+  "2025年6月10日Tai師父貼吧答疑.opus",
+  "2025年6月11日Tai師父微信公眾號答疑.opus",
+  "2025年6月11日Tai師父貼吧答疑.opus",
+  "2025年6月12日Tai師父微信公眾號答疑.opus",
+  "2025年6月12日Tai師父貼吧答疑.opus",
+  "2025年6月13日Tai師父微信公眾號答疑.opus",
+  "2025年6月13日Tai師父貼吧答疑.opus",
+  "2025年6月14日Tai師父微信公眾號答疑.opus",
+  "2025年6月14日Tai師父貼吧答疑.opus",
+  "2025年6月9日Tai師父微信公眾號答疑.opus",
+  "2025年6月9日Tai師父貼吧答疑.opus",
+  "2025年7月10日Tai師父微信公眾號答疑.opus",
+  "2025年7月10日Tai師父貼吧答疑.opus",
+  "2025年7月11日Tai師父微信公眾號答疑.opus",
+  "2025年7月11日Tai師父貼吧答疑.opus",
+  "2025年7月12日Tai師父微信公眾號答疑.opus",
+  "2025年7月12日Tai師父貼吧答疑.opus",
+  "2025年7月7日Tai師父微信公眾號答疑.opus",
+  "2025年7月7日Tai師父貼吧答疑.opus",
+  "2025年7月8日Tai師父微信公眾號答疑.opus",
+  "2025年7月8日Tai師父貼吧答疑.opus",
+  "2025年7月9日Tai師父微信公眾號答疑.opus",
+  "2025年7月9日Tai師父貼吧答疑.opus",
+  "2025年8月4日Tai師父微信公眾號答疑.opus",
+  "2025年8月4日Tai師父貼吧答疑.opus",
+  "2025年8月5日Tai師父微信公眾號答疑.opus",
+  "2025年8月5日Tai師父貼吧答疑.opus",
+  "2025年8月6日Tai師父微信公眾號答疑.opus",
+  "2025年8月6日Tai師父貼吧答疑.opus",
+  "2025年8月7日Tai師父微信公眾號答疑.opus",
+  "2025年8月7日Tai師父貼吧答疑.opus",
+  "2025年8月8日Tai師父微信公眾號答疑.opus",
+  "2025年8月8日Tai師父貼吧答疑.opus",
+  "2025年8月9日Tai師父微信公眾號答疑.opus",
+  "2025年8月9日Tai師父貼吧答疑.opus",
+  "2025年9月1日Tai師父微信公眾號答疑.opus",
+  "2025年9月1日Tai師父貼吧答疑.opus",
+  "2025年9月2日Tai師父微信公眾號答疑.opus",
+  "2025年9月2日Tai師父貼吧答疑.opus",
+  "2025年9月3日Tai師父微信公眾號答疑.opus",
+  "2025年9月3日Tai師父貼吧答疑.opus",
+  "2025年9月4日Tai師父微信公眾號答疑.opus",
+  "2025年9月4日Tai師父貼吧答疑.opus",
+  "2025年9月5日Tai師父微信公眾號答疑.opus",
+  "2025年9月5日Tai師父貼吧答疑.opus",
+  "2025年9月6日Tai師父微信公眾號答疑.opus",
+  "2025年9月6日Tai師父貼吧答疑.opus",
+  "2026年1月10日Tai師父官網答疑.opus",
+  "2026年1月10日Tai師父微信公眾號答疑.opus",
+  "2026年1月5日Tai師父官網答疑.opus",
+  "2026年1月5日Tai師父微信公眾號答疑.opus",
+  "2026年1月6日Tai師父官網答疑.opus",
+  "2026年1月6日Tai師父微信公眾號答疑.opus",
+  "2026年1月7日Tai師父官網答疑.opus",
+  "2026年1月7日Tai師父微信公眾號答疑.opus",
+  "2026年1月8日Tai師父官網答疑.opus",
+  "2026年1月8日Tai師父微信公眾號答疑.opus",
+  "2026年1月9日Tai師父官網答疑.opus",
+  "2026年1月9日Tai師父微信公眾號答疑.opus",
+  "2026年2月2日Tai師父官網答疑.opus",
+  "2026年2月2日Tai師父微信公眾號答疑.opus",
+  "2026年2月3日Tai師父官網答疑.opus",
+  "2026年2月3日Tai師父微信公眾號答疑.opus",
+  "2026年2月4日Tai師父官網答疑.opus",
+  "2026年2月4日Tai師父微信公眾號答疑.opus",
+  "2026年2月5日Tai師父官網答疑.opus",
+  "2026年2月5日Tai師父微信公眾號答疑.opus",
+  "2026年2月6日Tai師父官網答疑.opus",
+  "2026年2月6日Tai師父微信公眾號答疑.opus",
+  "2026年2月7日Tai師父官網答疑.opus",
+  "2026年2月7日Tai師父微信公眾號答疑.opus",
+  "2026年3月2日Tai師父官網答疑.opus",
+  "2026年3月2日Tai師父微信公眾號答疑.opus",
+  "2026年3月3日Tai師父官網答疑.opus",
+  "2026年3月3日Tai師父微信公眾號答疑.opus",
+  "2026年3月4日Tai師父官網答疑.opus",
+  "2026年3月4日Tai師父微信公眾號答疑.opus",
+  "2026年3月5日Tai師父官網答疑.opus",
+  "2026年3月5日Tai師父微信公眾號答疑.opus",
+  "2026年3月6日Tai師父官網答疑.opus",
+  "2026年3月6日Tai師父微信公眾號答疑.opus",
+  "2026年3月7日Tai師父官網答疑.opus",
+  "2026年3月7日Tai師父微信公眾號答疑.opus"
+];
+
+const dateRe = /^(\d{4})年(\d{1,2})月(\d{1,2})日/;
+function parseDate(name) {
+  const m = name.match(dateRe);
+  if (!m) return null;
+  return { y: +m[1], mo: +m[2], d: +m[3] };
+}
+function badgeFor(name) {
+  if (name.includes("貼吧"))            return { cls: "tb",  label: "貼吧" };
+  if (name.includes("微信公眾號") || name.includes("公眾號"))
+                                         return { cls: "wx",  label: "公眾號" };
+  if (name.includes("官網"))            return { cls: "web", label: "官網" };
+  return { cls: "gz", label: "答疑" };
+}
+
+const items = FILES.map((name) => {
+  const d = parseDate(name) || { y: 0, mo: 0, d: 0 };
+  const b = badgeFor(name);
+  const key = `${d.y}-${String(d.mo).padStart(2, "0")}`;
+  const sortKey = d.y * 10000 + d.mo * 100 + d.d;
+  return { name, d, b, key, sortKey };
+});
+
+const totalCount = items.length;
+document.getElementById("totalCount").textContent = totalCount;
+
+const $list = document.getElementById("list");
+const $search = document.getElementById("search");
+const $stats = document.getElementById("stats");
+const $sortNew = document.getElementById("sortNewest");
+const $sortOld = document.getElementById("sortOldest");
+const $np = document.getElementById("np");
+const $npTitle = document.getElementById("npTitle");
+const $npStop = document.getElementById("npStop");
+
+let sortDir = "desc"; // desc = newest first
+
+function render() {
+  const q = $search.value.trim().toLowerCase();
+  const filtered = items.filter(it =>
+    !q || it.name.toLowerCase().includes(q)
+  );
+
+  filtered.sort((a, b) =>
+    sortDir === "desc" ? b.sortKey - a.sortKey : a.sortKey - b.sortKey
+  );
+
+  const groups = new Map();
+  for (const it of filtered) {
+    if (!groups.has(it.key)) groups.set(it.key, []);
+    groups.get(it.key).push(it);
+  }
+
+  const groupKeys = Array.from(groups.keys()).sort((a, b) =>
+    sortDir === "desc" ? b.localeCompare(a) : a.localeCompare(b)
+  );
+
+  $list.innerHTML = "";
+  $stats.textContent = `顯示 ${filtered.length} / ${totalCount}`;
+
+  if (filtered.length === 0) {
+    const empty = document.createElement("div");
+    empty.className = "empty";
+    empty.textContent = "找不到符合的音檔";
+    $list.appendChild(empty);
+    return;
+  }
+
+  for (const gk of groupKeys) {
+    const list = groups.get(gk);
+    const [y, m] = gk.split("-");
+    const groupEl = document.createElement("section");
+    groupEl.className = "group";
+    groupEl.innerHTML = `
+      <div class="group-header">
+        <span>${y === "0" ? "未知日期" : `${y} 年 ${Number(m)} 月`}</span>
+        <span class="group-count">${list.length} 個音檔</span>
+      </div>
+    `;
+    for (const it of list) {
+      const url = "QnA/" + encodeURIComponent(it.name);
+      const dateLabel = it.d.y
+        ? `${String(it.d.mo).padStart(2, "0")}/${String(it.d.d).padStart(2, "0")}`
+        : "—";
+      const itemEl = document.createElement("div");
+      itemEl.className = "item";
+      itemEl.innerHTML = `
+        <div class="item-title">
+          <span class="date">${it.d.y || ""} ${dateLabel}</span>
+          <span class="name">${escapeHtml(it.name)}</span>
+          <span class="badge ${it.b.cls}">${it.b.label}</span>
+        </div>
+        <audio controls preload="none" src="${url}" data-title="${escapeAttr(it.name)}"></audio>
+      `;
+      groupEl.appendChild(itemEl);
+    }
+    $list.appendChild(groupEl);
+  }
+
+  wireAudio();
+}
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, c => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[c]));
+}
+function escapeAttr(s) { return escapeHtml(s); }
+
+function wireAudio() {
+  const audios = document.querySelectorAll("audio");
+  audios.forEach(a => {
+    a.addEventListener("play", () => {
+      audios.forEach(o => { if (o !== a && !o.paused) o.pause(); });
+      $np.classList.add("show");
+      $npTitle.textContent = a.dataset.title || "";
+    });
+    a.addEventListener("pause", () => {
+      const anyPlaying = Array.from(audios).some(o => !o.paused);
+      if (!anyPlaying) $np.classList.remove("show");
+    });
+    a.addEventListener("ended", () => {
+      const anyPlaying = Array.from(audios).some(o => !o.paused);
+      if (!anyPlaying) $np.classList.remove("show");
+    });
+  });
+}
+
+$search.addEventListener("input", render);
+$sortNew.addEventListener("click", () => {
+  sortDir = "desc";
+  $sortNew.classList.add("active");
+  $sortOld.classList.remove("active");
+  render();
+});
+$sortOld.addEventListener("click", () => {
+  sortDir = "asc";
+  $sortOld.classList.add("active");
+  $sortNew.classList.remove("active");
+  render();
+});
+$npStop.addEventListener("click", () => {
+  document.querySelectorAll("audio").forEach(a => { if (!a.paused) a.pause(); });
+  $np.classList.remove("show");
+});
+
+render();
+</script>
+</body>
+</html>
