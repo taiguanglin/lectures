@@ -192,12 +192,12 @@
 </div>
 
 <div class="footer-note container">
-  提示：本頁為靜態網頁，音檔以 HTML5 原生播放器串流播放 <code>QnA/*.opus</code>。
+  提示：本頁為靜態網頁，音檔以 HTML5 原生播放器串流播放 <code>*.opus</code>。
   若使用 Safari 無法播放 <code>.opus</code>，請改用 Chrome、Edge 或 Firefox。
 </div>
 
 <script>
-// === 檔案清單（與 QnA/ 內容對應）===
+// === 檔案清單（與同層 .opus 音檔對應）===
 const FILES = [
   "2024年11月11日Tai師父答疑.opus",
   "2024年11月12日Tai師父答疑.opus",
@@ -534,7 +534,7 @@ function render() {
       </div>
     `;
     for (const it of list) {
-      const url = "QnA/" + encodeURIComponent(it.name);
+      const url = encodeURIComponent(it.name);
       const dateLabel = it.d.y
         ? `${String(it.d.mo).padStart(2, "0")}/${String(it.d.d).padStart(2, "0")}`
         : "—";
